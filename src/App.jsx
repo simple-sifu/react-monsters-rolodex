@@ -14,15 +14,24 @@ export class App extends Component {
 
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
-        .then(data => this.setState({monsters: data}));
-
+        .then(data => {
+            this.setState({monsters: data})
+        })
     }
 
     render() {
+
         return (
-            <div>
-                <h1>Welcome { new Date().toString() } </h1>
-            </div>
+
+                <ul>
+                {
+                    this.state.monsters.map( monster => (
+                        <li key={monster.id}> { monster.name }</li>
+                    ))
+                }
+
+                </ul>
+
         );
     }
 }
