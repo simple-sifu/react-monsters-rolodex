@@ -26,7 +26,7 @@ export class App extends Component {
                 <ul>
                 {
                     this.state.monsters.map( monster => (
-                        <li key={monster.id}> { monster.name }</li>
+                        <h2 key={monster.id}> { monster.name }</h2>
                     ))
                 }
 
