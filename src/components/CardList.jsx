@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card } from 'card';
-import 'CardList.styles.css';
+import { Card } from './Card';
+import './cardList.css';
 
-export const CardList = props => {
+export const CardList = props => (
     <div className='cardList'>
         {
             props.monsters.map(
@@ -12,5 +12,5 @@ export const CardList = props => {
             )
         }
     </div>
-}
+)
 
