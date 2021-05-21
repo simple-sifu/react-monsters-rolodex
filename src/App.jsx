@@ -9,7 +9,7 @@ export class App extends Component {
         this.state = {
             monsters: [
             ],
-            searchField: 'Hello Tommy'
+            searchField: ''
         }
     }
 
@@ -27,7 +27,6 @@ export class App extends Component {
         const { monsters, searchField } = this.state;
         const filteredMonsters = monsters.filter( monster => 
             monster.name.toLowerCase().includes(searchField.toLowerCase()));
-        console.log("filteredMonsters -", filteredMonsters)
         return (
 
                 <div className='App'>
