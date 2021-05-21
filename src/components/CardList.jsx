@@ -4,13 +4,9 @@ import './cardList.css';
 
 export const CardList = props => (
     <div className='cardList'>
-        {
-            props.monsters.map(
-                monster => (
-                    <Card key={monster.id} monster={monster} />
-                )
-            )
-        }
+        {props.monsters.map(monster => (
+          <Card key={monster.id} monster={monster} />
+        ))}
     </div>
 )
 
