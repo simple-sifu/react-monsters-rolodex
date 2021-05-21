@@ -33,7 +33,7 @@ export class App extends Component {
 
                 <div>
                     {this.state.monsters.map(monster => 
-                        <h1>{monster.name}</h1>
+                        <h1 key={monster.id}>{monster.name}</h1>
                     )}
                 </div>
 
