@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { CardList } from './components/CardList';
+import './App.css';
 
 export class App extends Component {
 
@@ -26,7 +27,8 @@ export class App extends Component {
         // const { monsters } = this.state;
         return (
 
-                <div>
+                <div className='App'>
+                    <input type='search' placeholder="search monsters" />
                     <CardList monsters={this.state.monsters}>
                         
                     </CardList>
