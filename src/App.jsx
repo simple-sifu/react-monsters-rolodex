@@ -8,9 +8,9 @@ export class App extends Component {
         this.state = {
             monsters: [
 
-                {name: "Frankenstein"},
-                {name: "Dracula"},
-                {name: "Zombie"}
+                {name: "Frankenstein", id: 1},
+                {name: "Dracula", id: 2},
+                {name: "Zombie", id: 3}
 
             ],
             searchField: 'Hello Tommy'
