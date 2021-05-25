@@ -1,6 +1,9 @@
 h1 {
-    color: blue;
+  font-family: 'Bigelow Rules';
+  font-size: 72px;
+  color: #0ccac4;
 }
+
 .search {
     -webkit-appearance: none;
     border: none;
@@ -15,11 +18,7 @@ h1 {
     text-align: center;
   }
   
-  h1 {
-    font-family: 'Bigelow Rules';
-    font-size: 72px;
-    color: #0ccac4;
-  }
+
 
   body {
     margin: 0;
